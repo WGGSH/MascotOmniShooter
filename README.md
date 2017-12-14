@@ -1,0 +1,2 @@
+# MascotOmniShooter
+マスコットキャラ達による全方位シューティング
