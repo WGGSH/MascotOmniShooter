@@ -21,7 +21,8 @@ public class EnemyManager : MonoBehaviour {
 		if(this.totalTime>this.generateCount){
 			this.totalTime -= this.generateCount;
 			// 敵の発生
-			Instantiate(this.enemy.gameObject, new Vector3(1, 0, 0) * 10, Quaternion.identity);
+			GameObject enemy = Instantiate(this.enemy.gameObject,Quaternion.Euler(0,0,Random.Range(0,360)) * new Vector3(1, 0, 0)* 10, Quaternion.identity);
+			enemy.transform.parent = this.transform;
 		}
 	}
 }
