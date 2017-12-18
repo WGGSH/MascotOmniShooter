@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class EnemyManager : MonoBehaviour {
+	[SerializeField]
+	SceneInGame inGameManager;
 	private float totalTime;
 
 	[SerializeField]
@@ -23,6 +25,7 @@ public class EnemyManager : MonoBehaviour {
 			// 敵の発生
 			GameObject enemy = Instantiate(this.enemy.gameObject,Quaternion.Euler(0,0,Random.Range(0,360)) * new Vector3(1, 0, 0)* 10, Quaternion.identity);
 			enemy.transform.parent = this.transform;
+			enemy.GetComponent<Enemy>().inGameManager = this.inGameManager;
 		}
 	}
 }

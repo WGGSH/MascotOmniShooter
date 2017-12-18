@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class Enemy : MonoBehaviour {
 	[SerializeField]
+	public SceneInGame inGameManager;
+	[SerializeField]
 	private int life;
 	private Transform trans;
 	private Vector3 direction;
@@ -23,6 +25,7 @@ public class Enemy : MonoBehaviour {
 		this.life -= value;
 		if(this.life<=0){
 			Destroy(this.gameObject);
+			this.inGameManager.AddScore(10);
 		}
 	}
 	

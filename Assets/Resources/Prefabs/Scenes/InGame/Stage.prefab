@@ -23,7 +23,7 @@ GameObject:
   - component: {fileID: 114563406644841330}
   m_Layer: 0
   m_Name: Stage
-  m_TagString: Untagged
+  m_TagString: Stage
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -112,7 +112,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2abe6085c6e7a134cb15c8435950f56c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rotateDegreePerSecond: 0
+  inGameManager: {fileID: 0}
+  rotateDegreePerSecond: 120
   angleRadian: 0
 --- !u!114 &114563406644841330
 MonoBehaviour:
@@ -125,6 +126,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0bd543c9e6cafe64e99a1cd05d1ee6d3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  inGameManager: {fileID: 0}
   generateCount: 1
   enemy: {fileID: 1710544102532472, guid: 366208eb6df58294a8f7ad82b6e01f0d, type: 2}
 --- !u!212 &212440585991108540

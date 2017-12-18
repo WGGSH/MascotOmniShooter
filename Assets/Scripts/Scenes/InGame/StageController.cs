@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class StageController : MonoBehaviour {
 	[SerializeField]
+	SceneInGame inGameManager;
+	[SerializeField]
 	private float rotateDegreePerSecond;
 	[SerializeField]
 	private float angleRadian;
