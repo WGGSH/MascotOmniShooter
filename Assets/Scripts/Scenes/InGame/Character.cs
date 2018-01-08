@@ -11,6 +11,12 @@ public abstract class Character : MonoBehaviour {
 	[SerializeField]
 	protected GameObject weapon; // 発射する武器
 	[SerializeField]
+	protected int life; // 体力
+
+	public int Life{
+		get { return this.life; }
+	}
+
 	// protected StageController stageObject;
 
 	// キャラ出場時
@@ -39,4 +45,13 @@ public abstract class Character : MonoBehaviour {
 
 	// 各キャラごとの武器発射処理
 	protected abstract void ShootFunction();
+
+	// 被ダメージ
+	public void Damage(int value){
+		this.life -= value;
+		// if(this.life<0){
+		// 	Destroy(this.gameObject);
+		// }
+		// Debug.Log("damage");
+	}
 }

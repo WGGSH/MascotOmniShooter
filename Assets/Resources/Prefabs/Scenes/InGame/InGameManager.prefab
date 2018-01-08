@@ -52,10 +52,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gameManager: {fileID: 0}
+  limitTime: 0
+  totalTime: 0
+  score: 0
   player: {fileID: 0}
   stagePrefab: {fileID: 1214059722774192, guid: 9e8da9c5669019947bc004d875a3fa45,
     type: 2}
-  stageInstance: {fileID: 0}
   characterPrefabList:
   - {fileID: 1345070079451858, guid: 94995ae48b2720146bac13f3ef67ae80, type: 2}
   - {fileID: 1145152913603280, guid: 64d8242a70d49444c9b46097793e6f65, type: 2}
